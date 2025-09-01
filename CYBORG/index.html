@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBORG - IT Outsourcing der Zukunft</title>
+    <link rel="stylesheet" href="style.css?v=2025.1">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- INTRO ANIMATION -->
+    <div class="intro-container" id="introContainer">
+        <div class="cyborg-text">
+            <span class="letter" data-final="C">A</span>
+            <span class="letter" data-final="Y">B</span>
+            <span class="letter" data-final="B">C</span>
+            <span class="letter" data-final="O">D</span>
+            <span class="letter" data-final="R">E</span>
+            <span class="letter" data-final="G">F</span>
+        </div>
+        <div class="glitch-overlay"></div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content" id="mainContent">
+        <!-- Navigation -->
+        <nav class="nav-container">
+            <div class="logo">CYBORG</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Hero Video Section -->
+        <section class="hero-section">
+            <div class="video-container">
+                <video autoplay muted loop id="heroVideo">
+                    <source src="futuristicvideo.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                    <h1 class="hero-title">
+                        <span class="title-line">REVOLUTIONIZE</span>
+                        <span class="title-line">YOUR IT</span>
+                        <span class="title-line">INFRASTRUCTURE</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Hochleistungs-IT-Outsourcing mit KI & Elite-Entwicklern
+                    </p>
+                    <button class="cta-button" onclick="scrollToContact()">
+                        <span>JETZT UPGRADEN</span>
+                        <div class="button-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <h2 class="section-title" data-text="SERVICES">SERVICES</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Fullstack Development</h3>
+                        <p>Komplette Web-Entwicklung: Frontend, Backend, Database, Mobile Apps, APIs und E-Commerce-Lösungen</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Komplette Instandhaltung</h3>
+                        <p>24/7 Monitoring, Bug-Fixes, Updates, Backup-Management und Performance-Optimierung</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Cybersecurity</h3>
+                        <p>Penetration Testing, Firewall-Management, SSL/TLS, Compliance und Incident Response</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <h3>Automatisierungsprozesse</h3>
+                        <p>CI/CD Pipelines, DevOps, Workflow-Automation, Testing-Automation und Monitoring-Automation</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>Cloud Work</h3>
+                        <p>AWS/Azure/GCP Management, Serverless, Containerization, Database-Management und CDN & Caching</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>Data & Analytics</h3>
+                        <p>Business Intelligence, Machine Learning, Data Migration und API Integration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title" data-text="ABOUT">ABOUT</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>THE COLLECTIVE</h3>
+                        <p>CYBORG ist ein Elite-Kollektiv hochqualifizierter Entwickler, die eng mit fortschrittlicher KI zusammenarbeiten. Wir haben uns darauf spezialisiert, traditionelle IT-Abteilungen zu revolutionieren und durch unsere hybrid-intelligenten Systeme zu ersetzen.</p>
+                        <p>Durch unsere strukturierte und technologiegestützte Arbeitsweise erreichen wir eine Effizienz, die klassische Ansätze klar übertrifft.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">60%</span>
+                            <span class="stat-label">Kosteneinsparung</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Uptime-Garantie</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section pricing-section">
+            <div class="container">
+                <h2 class="section-title" data-text="PRICING">PRICING</h2>
+                <div class="pricing-grid">
+                    <!-- CYBORG LIGHT -->
+                    <div class="pricing-card light">
+                        <div class="pricing-header">
+                            <h3>CYBORG LIGHT</h3>
+                            <div class="price">
+                                <span class="amount">2000</span>
+                                <span class="currency">€</span>
+                                <span class="period">/Monat</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature">✓ Monatsziele Umsetzung</div>
+                            <div class="feature">✓ Fullstack Development</div>
+                            <div class="feature">✓ Komplette Instandhaltung</div>
+                            <div class="feature">✓ Cybersecurity</div>
+                            <div class="feature">✓ Automatisierungsprozesse</div>
+                        </div>
+                        <button class="pricing-button" onclick="selectPlan('light')">
+                            <span>LIGHT WÄHLEN</span>
+                            <div class="button-glow"></div>
+                        </button>
+                    </div>
+
+                    <!-- CYBORG BASIC -->
+                    <div class="pricing-card basic">
+                        <div class="pricing-header">
+                            <h3>CYBORG BASIC</h3>
+                            <div class="price">
+                                <span class="amount">3000</span>
+                                <span class="currency">€</span>
+                                <span class="period">/Monat</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature">✓ Wochenziele Umsetzung</div>
+                            <div class="feature">✓ Fullstack Development</div>
+                            <div class="feature">✓ Komplette Instandhaltung</div>
+                            <div class="feature">✓ Erweiterte Cybersecurity</div>
+                            <div class="feature">✓ Automatisierungsprozesse</div>
+                            <div class="feature">✓ Cloud Work</div>
+                            <div class="feature">✓ Data & Analytics</div>
+                            <div class="feature">✓ Wöchentliche Berichte</div>
+                            <div class="feature">✓ Prioritäts-Support</div>
+                        </div>
+                        <button class="pricing-button" onclick="selectPlan('basic')">
+                            <span>BASIC WÄHLEN</span>
+                            <div class="button-glow"></div>
+                        </button>
+                    </div>
+
+                    <!-- CYBORG PREMIUM -->
+                    <div class="pricing-card premium">
+                        <div class="pricing-header">
+                            <h3>CYBORG PREMIUM</h3>
+                            <div class="price">
+                                <span class="amount">5000</span>
+                                <span class="currency">€</span>
+                                <span class="period">/Monat</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature">✓ Sofortige Bearbeitung</div>
+                            <div class="feature">✓ Keine Wartezeiten</div>
+                            <div class="feature">✓ Persönlicher Ansprechpartner</div>
+                            <div class="feature">✓ Fullstack Development</div>
+                            <div class="feature">✓ Komplette Instandhaltung</div>
+                            <div class="feature">✓ Erweiterte Cybersecurity</div>
+                            <div class="feature">✓ Automatisierungsprozesse</div>
+                            <div class="feature">✓ Cloud Work</div>
+                            <div class="feature">✓ Data & Analytics</div>
+                            <div class="feature">✓ Erweiterter Support</div>
+                            <div class="feature">✓ Wöchentliche Berichte</div>
+                        </div>
+                        <button class="pricing-button" onclick="selectPlan('premium')">
+                            <span>PREMIUM WÄHLEN</span>
+                            <div class="button-glow"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title" data-text="CONTACT">CONTACT</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>READY TO UPGRADE?</h3>
+                        <p>Kontaktiere uns für eine kostenlose Analyse deiner aktuellen IT-Infrastruktur.</p>
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>contact@cyborg-collective.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <span>+49 (0) 123 456 789</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" name="company" placeholder="Firmenname" required>
+                        <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+                        <input type="tel" name="phone" placeholder="Telefonnummer">
+                        <select id="planSelect" name="plan" required>
+                            <option value="">Wähle deinen CYBORG Plan</option>
+                            <option value="light">CYBORG LIGHT - €2000/Monat</option>
+                            <option value="basic">CYBORG BASIC - €3000/Monat</option>
+                            <option value="premium">CYBORG PREMIUM - €5000/Monat</option>
+                        </select>
+                        <textarea name="message" placeholder="Erzähle uns von deinen aktuellen IT-Herausforderungen..." rows="4"></textarea>
+                        <button type="submit">
+                            <span>NACHRICHT SENDEN</span>
+                            <div class="button-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">CYBORG</div>
+                    <div class="footer-text">
+                        © 2025 CYBORG Collective. Redefinieren der Zukunft der IT.
+                    </div>
+                </div>
+                <div class="footer-imprint">
+                    <div class="imprint-section">
+                        <h4>Impressum</h4>
+                        <p><strong>CYBORG Collective</strong> | Dominik Trausmuth<br>
+                        Musterstraße 123, 12345 Musterstadt<br>
+                        E-Mail: contact@cyborg-collective.com | Tel: +49 (0) 123 456 789<br>
+                        USt-ID: DE123456789</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
