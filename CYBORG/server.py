@@ -26,7 +26,7 @@ def add_security_headers(response):
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "dominik.trausmuth@gmail.com"  # Deine Gmail
-SENDER_PASSWORD = "nmtg zikx bxkw para"   # Dein App-Passwort
+SENDER_PASSWORD = "1234 1234 1234 1234"   # Dein App-Passwort
 RECIPIENT_EMAIL = "trausmuthd@gmail.com"
 
 # Security: Input validation and sanitization
@@ -157,4 +157,5 @@ if __name__ == '__main__':
     print("📧 Email will be sent to:", RECIPIENT_EMAIL)
     print("🌐 Website available at: http://localhost:5000")
     print("⚠️  Remember to configure SENDER_EMAIL and SENDER_PASSWORD in server.py")
+
     app.run(debug=True, host='0.0.0.0', port=5000) 
